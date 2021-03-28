@@ -1,5 +1,6 @@
 # final-project-Fanghao-Han
-final-project-Fanghao-Han created by GitHub Classroom
+AESD Spring 2021, final project by Fanghao Han
 
-
-![Wiki Page Link](https://github.com/cu-ecen-5013/final-project-Fanghao-Han/wiki)
+# Wiki
+* [Project Overview](https://github.com/cu-ecen-5013/final-project-Fanghao-Han/wiki/Project-Overview)
+* [Project Schedule](https://github.com/cu-ecen-5013/final-project-Fanghao-Han/wiki/Project-Schedule)
