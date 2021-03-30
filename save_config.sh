@@ -1,5 +1,5 @@
 #!/bin/bash
-#Script to save the modified configuration as modified_qemu_aarch64_virt_defconfig and linux kernel configuration.
+#Script to save the modified configuration as modified_pi3_defconfig and linux kernel configuration.
 #Author: Siddhant Jajoo.
 
 cd `dirname $0`
