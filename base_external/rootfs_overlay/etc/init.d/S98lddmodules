@@ -1,0 +1,40 @@
+#!/bin/sh
+
+#run scull_load functions on startup to load the scull driver, and run scull_unload functions on shutdown to unload.
+#Run module_load functions on startup to load the faulty driver and run module_unload functions on shutdown to unload.
+#Run modprobe on the hello module to load on startup and use rmmod to remove on shutdown.
+
+#KODIR = /lib/modules/4.19.91/extra
+#cp $(KODIR)/faulty.ko /usr/bin
+#cp $(KODIR)/scull.ko /usr/bin
+
+
+case "$1" in
+    start)
+        echo "Running scull_load on startup to load the scull driver..."
+        /usr/bin/scull_load
+        #modprobe scull
+
+        echo "Running module_load functions on startup to load the faulty driver..."
+        /usr/bin/module_load faulty
+        #modprobe faulty
+
+        modprobe hello
+        ;;
+    stop)
+        echo "Running scull_unload on shutdown to load the scull driver..."
+        #rmmod scull
+        /usr/bin/scull_unload 
+
+        echo "Running module_unload functions on shutdown to load the faulty driver..."
+        #rmmod faulty
+        /usr/bin/module_unload faulty
+
+        rmmod hello
+        ;;    
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+esac
+
+exit $?

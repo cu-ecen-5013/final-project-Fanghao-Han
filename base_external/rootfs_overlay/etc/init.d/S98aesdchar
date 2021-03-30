@@ -1,0 +1,25 @@
+#!/bin/sh
+
+#KODIR = /lib/modules/4.19.91/extra
+#cp $(KODIR)/faulty.ko /usr/bin
+#cp $(KODIR)/scull.ko /usr/bin
+
+
+case "$1" in
+    start)
+        echo "Running aesdchar_load on startup ..."
+        /usr/bin/aesd_load_qemu
+   
+        ;;
+    stop)
+        echo "Running aesdchar_unload on shutdown..."
+        #rmmod scull
+        /usr/bin/aesdchar_unload_qemu
+
+        ;;    
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+esac
+
+exit $?
