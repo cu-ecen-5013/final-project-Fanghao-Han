@@ -7,7 +7,7 @@
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
 #'COMMIT VERSION NUMBER' 
-AESD_ASSIGNMENTS_VERSION = 5547c53219acbf0c9be216db64cef9aea5b00fe7#08d2f2429847b77f4b0705140f0a92d50525d577
+AESD_ASSIGNMENTS_VERSION = 746d6d90803d5a75d296913586bb8dc4a5a2c49c
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
